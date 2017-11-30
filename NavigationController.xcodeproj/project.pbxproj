@@ -14,6 +14,7 @@
 		ECED178F1FCF871E00501CEC /* FavouritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECED178E1FCF871E00501CEC /* FavouritesList.swift */; };
 		ECED17951FCF8DC000501CEC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECED17941FCF8DC000501CEC /* RootViewController.swift */; };
 		ECED17971FCFA1F400501CEC /* FontListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECED17961FCFA1F400501CEC /* FontListViewController.swift */; };
+		ECED17991FCFD0EA00501CEC /* FontSizesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECED17981FCFD0EA00501CEC /* FontSizesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ECED178E1FCF871E00501CEC /* FavouritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesList.swift; sourceTree = "<group>"; };
 		ECED17941FCF8DC000501CEC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		ECED17961FCFA1F400501CEC /* FontListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontListViewController.swift; sourceTree = "<group>"; };
+		ECED17981FCFD0EA00501CEC /* FontSizesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				ECED17881FCF81FC00501CEC /* Info.plist */,
 				ECED178E1FCF871E00501CEC /* FavouritesList.swift */,
 				ECED17961FCFA1F400501CEC /* FontListViewController.swift */,
+				ECED17981FCFD0EA00501CEC /* FontSizesViewController.swift */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECED17991FCFD0EA00501CEC /* FontSizesViewController.swift in Sources */,
 				ECED178F1FCF871E00501CEC /* FavouritesList.swift in Sources */,
 				ECED17971FCFA1F400501CEC /* FontListViewController.swift in Sources */,
 				ECED177D1FCF81FC00501CEC /* AppDelegate.swift in Sources */,
