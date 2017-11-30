@@ -32,7 +32,29 @@ class FontSizesViewController: UITableViewController {
        
         return cell
      }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?) {
+        let tableViewCell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: tableViewCell)!
+        let font = fontForDisplay(atIndexPath: indexPath as NSIndexPath)
+        
+        if segue.identifier == "ShowFontSizes" {
+            let sizesVC = segue.destination as! FontSizesViewController
+            sizesVC.title = font.fontName
+            sizesVC.font = font
+        } else {
+            let infoVC = segue.destination as! FontInfoViewController
+            infoVC.title = font.fontName
+            infoVC.font = font
+            infoVC.favourite =
+              FavouritesList.sharedFavouritesList.favourites.contains(font.fontName)
+        }
+    }
+    
 }
 
+        
+
+     
 
 

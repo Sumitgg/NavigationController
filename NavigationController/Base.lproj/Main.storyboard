@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -106,7 +107,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="tNY-qT-DQS" kind="show" id="Ivk-8a-L5f"/>
+                                    <segue destination="tNY-qT-DQS" kind="show" id="QaI-2Y-Jeh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -119,6 +120,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EcF-eq-1CA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1487" y="-663"/>
+        </scene>
+        <!--Font Info View Controller-->
+        <scene sceneID="FrB-0M-qZc">
+            <objects>
+                <viewController id="qK6-ub-Vae" customClass="FontInfoViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJc-Iy-vNO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNW-ak-Fbk">
+                                <rect key="frame" x="44" y="61" width="287" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KYB-GN-Ttu">
+                                <rect key="frame" x="282" y="560" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="togglefavouriteWithSender:" destination="qK6-ub-Vae" eventType="valueChanged" id="a29-X7-oeK"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HEp-62-kqI">
+                                <rect key="frame" x="42" y="617" width="291" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slideFontSizeWithSlider:" destination="qK6-ub-Vae" eventType="valueChanged" id="FU9-a0-2TS"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0r-9x-MQo">
+                                <rect key="frame" x="44" y="560" width="211" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="MYh-02-s4f"/>
+                    </view>
+                    <connections>
+                        <outlet property="favouriteSwitch" destination="KYB-GN-Ttu" id="oeL-iK-ahv"/>
+                        <outlet property="fontSampleLabel" destination="rNW-ak-Fbk" id="OAn-WO-fvz"/>
+                        <outlet property="fontSizeLabel" destination="y0r-9x-MQo" id="xTY-gV-7lt"/>
+                        <outlet property="fontSizeSlider" destination="HEp-62-kqI" id="u3B-2N-ajH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvF-nE-pMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600.79999999999995" y="56.221889055472268"/>
         </scene>
         <!--Font Sizes View Controller-->
         <scene sceneID="dmZ-Db-v4O">
@@ -152,6 +204,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="qK6-ub-Vae" kind="show" id="kRB-it-Sfp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -162,7 +217,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5x-td-mPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1506" y="29"/>
+            <point key="canvasLocation" x="1487" y="199"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J4V-oe-zUb">

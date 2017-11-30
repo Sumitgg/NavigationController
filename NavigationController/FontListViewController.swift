@@ -53,7 +53,8 @@ class FontListViewController: UITableViewController {
     let sizesVC = segue.destination as! FontSizesViewController
     sizesVC.title = font.fontName
     sizesVC.font = font
-}
+   }
+
 }
 
 

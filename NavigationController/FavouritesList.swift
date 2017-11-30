@@ -22,6 +22,14 @@ class FavouritesList{
         
     }
     
+    func moveItem(fromIndex from: Int, toIndex to: Int) {
+        let item = favourites[from]
+        favourites.remove(at: from)
+        favourites.insert(item, at: to)
+        saveFavourites()
+        
+    }
+    
     // this method saves font favourites to the user preference file
     private func saveFavourites() {
         let defaults = UserDefaults.standard
