@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		ECED177D1FCF81FC00501CEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECED177C1FCF81FC00501CEC /* AppDelegate.swift */; };
-		ECED177F1FCF81FC00501CEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECED177E1FCF81FC00501CEC /* ViewController.swift */; };
 		ECED17821FCF81FC00501CEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECED17801FCF81FC00501CEC /* Main.storyboard */; };
 		ECED17841FCF81FC00501CEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECED17831FCF81FC00501CEC /* Assets.xcassets */; };
 		ECED17871FCF81FC00501CEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECED17851FCF81FC00501CEC /* LaunchScreen.storyboard */; };
+		ECED178F1FCF871E00501CEC /* FavouritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECED178E1FCF871E00501CEC /* FavouritesList.swift */; };
+		ECED17951FCF8DC000501CEC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECED17941FCF8DC000501CEC /* RootViewController.swift */; };
+		ECED17971FCFA1F400501CEC /* FontListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECED17961FCFA1F400501CEC /* FontListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ECED17791FCF81FC00501CEC /* NavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECED177C1FCF81FC00501CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECED177E1FCF81FC00501CEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECED17811FCF81FC00501CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECED17831FCF81FC00501CEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECED17861FCF81FC00501CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECED17881FCF81FC00501CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECED178E1FCF871E00501CEC /* FavouritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesList.swift; sourceTree = "<group>"; };
+		ECED17941FCF8DC000501CEC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		ECED17961FCFA1F400501CEC /* FontListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				ECED177C1FCF81FC00501CEC /* AppDelegate.swift */,
-				ECED177E1FCF81FC00501CEC /* ViewController.swift */,
 				ECED17801FCF81FC00501CEC /* Main.storyboard */,
 				ECED17831FCF81FC00501CEC /* Assets.xcassets */,
+				ECED17941FCF8DC000501CEC /* RootViewController.swift */,
 				ECED17851FCF81FC00501CEC /* LaunchScreen.storyboard */,
 				ECED17881FCF81FC00501CEC /* Info.plist */,
+				ECED178E1FCF871E00501CEC /* FavouritesList.swift */,
+				ECED17961FCFA1F400501CEC /* FontListViewController.swift */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECED177F1FCF81FC00501CEC /* ViewController.swift in Sources */,
+				ECED178F1FCF871E00501CEC /* FavouritesList.swift in Sources */,
+				ECED17971FCFA1F400501CEC /* FontListViewController.swift in Sources */,
 				ECED177D1FCF81FC00501CEC /* AppDelegate.swift in Sources */,
+				ECED17951FCF8DC000501CEC /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
