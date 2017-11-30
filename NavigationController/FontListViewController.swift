@@ -15,6 +15,10 @@ class FontListViewController: UITableViewController {
             UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
          cellPointSize = preferredTableViewFont.pointSize
          tableView.estimatedRowHeight = cellPointSize
+        
+        if showsFavourites {
+            navigationItem.rightBarButtonItem = editButtonItem
+            }
     }
     
     func fontForDisplay(atIndexPath indexPath: NSIndexPath) -> UIFont {
@@ -53,9 +57,15 @@ class FontListViewController: UITableViewController {
     let sizesVC = segue.destination as! FontSizesViewController
     sizesVC.title = font.fontName
     sizesVC.font = font
-   }
-
+       }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+           FavouritesList.sharedFavouritesList.moveItem(fromIndex: sourceIndexPath.row, toIndex: destinationIndexPath.row)
+        fontNames = FavouritesList.sharedFavouritesList.favourites
+    }
 }
+
+
 
 
 
